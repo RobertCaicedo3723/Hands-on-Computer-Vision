@@ -174,3 +174,14 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# --- Artefactos de descarga/ejecución (no versionar) ---
+# Imágenes RAW descargadas en las sesiones
+*.CR2
+*.NEF
+*.dng
+raw.CR2
+# Datasets descargados en tiempo de ejecución (CIFAR, KITTI, etc.)
+sesiones/*/data/
+sesiones/*/uploaded_images/
+# Credenciales/tokens de uñas no

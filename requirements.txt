@@ -1,0 +1,82 @@
+# Hand-on Computer Vision - entornos de dependencias
+# Python 3.14.3 (venv). Generado con pip.
+# Instalar:  pip install -r requirements.txt
+# Ejecutar notebooks en VS Code: seleccionar el kernel "Python (Hands-on CV)"
+
+# --- Base científica ---
+numpy
+scipy
+pandas
+matplotlib
+seaborn
+tqdm
+joblib
+requests
+tabulate
+ipython
+ipywidgets
+pillow
+
+# --- Visión por computadora / procesamiento de imagen ---
+opencv-contrib-python
+scikit-image
+scikit-learn
+rawpy
+imageio
+tifffile
+
+# --- Aprendizaje profundo ---
+torch
+torchvision
+torchinfo
+timm
+transformers
+datasets
+huggingface_hub
+safetensors
+
+# --- IA multimodal (texto, audio, segmentación) ---
+sentence-transformers
+diffusers
+segment-anything
+supervision
+openai-whisper
+spacy>=3.8
+nltk
+tokenizers
+
+# --- Utilerías / visualización / datos geo ---
+plotly
+graphviz
+bertviz
+h5py
+gdown
+trimesh
+earthpy
+rasterio
+geopandas
+roboflow
+dataclasses-json
+jupyter_bbox_widget
+rouge_score
+pysptools
+mediapipe
+
+# --- Modelos externos instalados desde GitHub (por el propio notebook o manualmente) ---
+# Versión 0.1 (sesión 5 / profundidad monocular)
+unik3d @ git+https://github.com/lpiccinelli-eth/UniK3D.git
+
+# NOTA: torchaudio se instala como dependencia de unik3d pero se desinstaló a
+# propósito: la versión disponible (2.11.0) no encaja con torch 2.13.0 en
+# Python 3.14 y rompía la cadena de imports de sentence_transformers.
+
+# --- Renderizado (sesión 6 / NLOS; requiere LLVM del sistema para aceleración) ---
+mitsuba
+drjit
+mitransient
+
+# --- Ejecución de notebooks ---
+ipykernel
+jupyter
+notebook
+jupyterlab
